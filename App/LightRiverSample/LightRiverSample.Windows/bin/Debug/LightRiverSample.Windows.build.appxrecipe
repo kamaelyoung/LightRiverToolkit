@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FATJOHN-PC</Machine>
+    <WindowsUser>FatJohn</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>adfba61f-5490-4a9f-8899-7a5b4db55d27</PackageIdentityName>
+    <IntermediateOutputPath>D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\LightRiverSample.Windows.exe">
+      <PackagePath>LightRiverSample.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\Portable\LightRiver\bin\Debug\LightRiver.dll">
+      <PackagePath>LightRiver.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\Platform\LightRiver.Universal\bin\Debug\LightRiver.Universal.dll">
+      <PackagePath>LightRiver.Universal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\Portable\LightRiver\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\LightRiverSample.Windows.xr.xml">
+      <PackagePath>LightRiverSample.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OpenSource\LightRiverToolkit\App\LightRiverSample\LightRiverSample.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

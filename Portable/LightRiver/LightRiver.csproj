@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68C92D68-72A8-48CE-935E-946BD681DE09}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LightRiver</RootNamespace>
+    <AssemblyName>LightRiver</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Core\Attirubes\EnumDescriptionAttribute.cs" />
+    <Compile Include="Core\Base\BaseBindable.cs" />
+    <Compile Include="Core\Base\SafeRaise.cs" />
+    <Compile Include="Core\Base\Singleton.cs" />
+    <Compile Include="Core\Collection\ObjectDictionary.cs" />
+    <Compile Include="Core\EventArgs\ObjectEventArgs.cs" />
+    <Compile Include="Core\EventArgs\StringEventArgs.cs" />
+    <Compile Include="Core\Extensions\CollectionExtensions.cs" />
+    <Compile Include="Core\Extensions\StringExtensions.cs" />
+    <Compile Include="Core\PlatformService\ICryptographyService.cs" />
+    <Compile Include="Core\PlatformService\IDeviceInformationService.cs" />
+    <Compile Include="Core\PlatformService\IDispatcherService.cs" />
+    <Compile Include="Core\PlatformService\INetowrkService.cs" />
+    <Compile Include="Core\PlatformService\IPlatformFile.cs" />
+    <Compile Include="Core\PlatformService\PlatformService.cs" />
+    <Compile Include="Core\Utility\Convert2.cs" />
+    <Compile Include="Core\Utility\EnumHelper.cs" />
+    <Compile Include="Net.Dispatcher\BaseDispatcher.cs" />
+    <Compile Include="Net.Dispatcher\BaseQueryDispatcher.cs" />
+    <Compile Include="Net.Dispatcher\IDispatcher.cs" />
+    <Compile Include="Net.Dispatcher\IQueryDispatcher.cs" />
+    <Compile Include="Net.Sockets\Base\ITelegramSocket.cs" />
+    <Compile Include="Net.Sockets\Connector\BaseSocketConnector.cs" />
+    <Compile Include="Net.Sockets\Connector\SocketConnector.cs" />
+    <Compile Include="Net.Sockets\EventArgs\SocketEventArgs.cs" />
+    <Compile Include="Net.Sockets\Receiver\BaseSocketReceiver.cs" />
+    <Compile Include="Net.Sockets\Receiver\SocketReceiver.cs" />
+    <Compile Include="Net.Sockets\Sender\BaseSocketSender.cs" />
+    <Compile Include="Net.Sockets\Sender\SocketSender.cs" />
+    <Compile Include="Net\Base\Telegram.cs" />
+    <Compile Include="Net\EventArgs\ParseFinishEventArgs.cs" />
+    <Compile Include="Net\Extension\NetStringExtensions.cs" />
+    <Compile Include="Net\HostProvider\Host.cs" />
+    <Compile Include="Net\HostProvider\HostProvider.cs" />
+    <Compile Include="Net\ParseResult\ParseError.cs" />
+    <Compile Include="Net\ParseResult\ParseResult.cs" />
+    <Compile Include="Net\ParserPool\IParserWorkItem.cs" />
+    <Compile Include="Net\ParserPool\ParserPool.cs" />
+    <Compile Include="Net\ParserPool\ParseWorkItem.cs" />
+    <Compile Include="Net\Parser\BaseParser.cs" />
+    <Compile Include="Net\Parser\IParser.cs" />
+    <Compile Include="Net\Parser\JsonParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\AssemblyExtensions.cs" />
+    <Compile Include="ServiceModel\Attributes\IServiceParameterConveter.cs" />
+    <Compile Include="ServiceModel\Attributes\ServiceParameterIgnoreAttribute.cs" />
+    <Compile Include="ServiceModel\Attributes\ServiceParameterPropertyAttribute.cs" />
+    <Compile Include="ServiceModel\BaseHttpService\Base\BaseHttpService.cs" />
+    <Compile Include="ServiceModel\BaseHttpService\Parameter\HttpServiceParameter.cs" />
+    <Compile Include="ServiceModel\BaseQuerySocketService\BaseQuerySocketService.cs" />
+    <Compile Include="Utility\JsonIoUtility\JsonIoUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Solution\LightRiverToolkit(2013)\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
